@@ -1,0 +1,720 @@
+<!doctype html>
+<html class="no-js" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="fonts/stylesheet.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<!--[if IE]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade
+  your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<!-- Add your site or application content here -->
+<div class="site">
+
+  <header class="header block">
+    <div class="container">
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <a href="#" ><img src="img/Frame.png" alt="" class="navbar__logo-main"></a>
+        </div>
+        <div class="navbar__menu">
+          <ul class="navbar__menu-list">
+            <li class="navbar__menu--list-item"><a href="#mainLink" class="nav-links">Главная</a></li>
+            <li class="navbar__menu--list-item"><a href="#whyUsLink" class="nav-links">Почему мы?</a></li>
+            <li class="navbar__menu--list-item"><a href="#productsLink" class="nav-links">Услуги</a></li>
+            <li class="navbar__menu--list-item"><a href="#commentsLink" class="nav-links">Отзывы</a></li>
+            <li class="navbar__menu--list-item"><a href="#getStationLink" class="nav-links">Процесс</a></li>
+            <li class="navbar__menu--list-item"><a href="#" class="nav-links">Контакты</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="callback">
+        <a href="tel:+8(999)9999999" class="phone">8 (999) 999-99-99</a>
+        <a href="#" class="button btn-action">Заказать</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main block" id="mainLink">
+    <div class="container">
+      <div class="sale">
+        <div class="sale__top">
+          <h1 class="sale__title">Биологическая очистка сточных вод до 98%</h1>
+          <span class="comment-grey">Комфорт в Вашем доме за 1 день. От производителя</span>
+        </div>
+        <div class="sale__middle">
+          <figure class="sale__middle-img">
+            <img src="img/main-1.png" alt="" id="sale-img1">
+            <img src="img/main-2.png" alt="" id="sale-img2">
+          </figure>
+          <div class="sale__form">
+            <h2>Заказать консультацию</h2>
+            <div>
+              <span class="comment-grey">Персональный менеджер свяжется с вами в удобное для вас время.</span>
+            </div>
+            <form action="">
+              <input type="text" class="sale__form-name" placeholder="Ваше имя">
+              <input type="text" class="sale__form-phone phone" placeholder="+7(999)999-99-99" id="phone">
+              <a href="#" class=" form-button btn-action">Отправить</a>
+            </form>
+          </div>
+        </div>
+        <div class="sale__bottom">
+          <div class="sale__bottom-left">
+            <figure>
+              <img src="img/sale-1.png" alt="">
+            </figure>
+            <div>
+              <p>До конца 2019 года действует</p>
+              <span>скидка 5%</span>
+            </div>
+          </div>
+          <div class="sale__bottom-right">
+            <p>До конца акции осталось:</p>
+            <div class="sale__bottom-right--container">
+              <div class="rect-days rect-flex">
+                <span class="rect-days__count rect-timer-color"></span> <b>дня</b>
+              </div>
+              <div class="rect-hours rect-flex">
+                <span class="rect-hours__count rect-timer-color"></span> <b>часов</b>
+              </div>
+              <div class="rect-minutes rect-flex">
+                <span class="rect-minutes__count rect-timer-color"></span> <b>минут</b>
+              </div>
+              <div class="rect-seconds rect-flex">
+                <span class="rect-seconds__count rect-timer-color"></span> <b>секунд</b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="products block" id="productsLink">
+    <div class="container">
+      <div class="products__wrapper">
+        <div class="products__header">
+          <h2 class="products__header-title">Персональный подбор септика</h2>
+        </div>
+        <div class="products__range">
+          <img src="img/prod-gr2.png" alt="">
+          <div class="products__range-input form-range">
+            <p>Количество пользователей: <span class="products__range-count" id="rangeValue">10</span></p>
+            <input type="range" class="products__range-input-func" value="10" min="1" max="30" onchange="document.getElementById('rangeValue').innerHTML = this.value;" list="rangeList">
+            <datalist id="rangeList">
+              <option value="1" label="1">1</option>
+              <option value="5" label="5">5</option>
+              <option value="10" label="10">10</option>
+              <option value="15" label="15">15</option>
+              <option>20</option>
+              <option>25</option>
+              <option>30</option>
+            </datalist>
+            <div class="range-list-values">
+              <span>1</span>
+              <span>5</span>
+              <span>10</span>
+              <span>15</span>
+              <span>20</span>
+              <span>25</span>
+              <span>30</span>
+            </div>
+          </div>
+          <img src="img/prod-gr4.png" alt="">
+        </div>
+        <div class="products__items">
+          <div class="products__items-wrap">
+            <img src="img/prod1.png" alt="">
+            <h3>Евролос Эко 15</h3>
+            <div class="price">
+              <span class="old-price">160 300₽</span>
+              <span class="new-price">135 270₽</span>
+            </div>
+            <p class="prod-decr">Анаэробный энергонезависимый септик. Доочистка стоков грунтом. Абсолютная
+              энергонезависимость. Вызов ассенизаторской машины рекомендуется раз в 2 года.</p>
+            <ul class="prod-list">
+              <li class="prod-list__item">
+                <img src="img/prod-count.png" alt="">
+                <p>Кол-во пользователей <br> <b>От 3 до 250 человек</b></p>
+              </li>
+              <li class="prod-list__item">
+                <img src="img/prod-living.png" alt="">
+                <p>Проживание <br> <b>Сезонное/Постоянное</b></p>
+              </li>
+              <li class="prod-list__item">
+                <img src="img/prod-filter.png" alt="">
+                <p>Степень очистки <br> <b>до 75%</b></p>
+              </li>
+              <li class="prod-list__item">
+                <img src="img/prod-filter-with.png" alt="">
+                <p>Доочистка грунтом <br> <b>Требуется</b></p>
+              </li>
+              <li class="prod-list__item">
+                <img src="img/prod-water.png" alt="">
+                <p>Уровень грунтовых вод <br> <b>Любой</b></p>
+              </li>
+            </ul>
+            <div class="prod-btn-wrap">
+              <a href="#" class="products__items-wrap--btn-buy btn-hover">Заказать</a>
+              <a href="#" class="products__items-wrap--btn-cost">Все цены</a>
+            </div>
+          </div>
+          <div class="products__items-wrap">
+            <div class="products__items-wrap">
+              <img src="img/prod2.png" alt="">
+              <h3>Евролос Био 20</h3>
+              <div class="price">
+                <span class="old-price">160 300₽</span>
+                <span class="new-price">135 270₽</span>
+              </div>
+              <p class="prod-decr">Станция биологической очистки сточных вод. Не требует вызова ассенизаторской машины.
+                Идеально подходит для высоких грунтовых вод.</p>
+              <ul class="prod-list">
+                <li class="prod-list__item">
+                  <img src="img/prod-count.png" alt="">
+                  <p>Кол-во пользователей <br> <b>От 3 до 250 человек</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-living.png" alt="">
+                  <p>Проживание <br> <b>Сезонное/Постоянное</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-filter.png" alt="">
+                  <p>Степень очистки <br> <b>до 75%</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-filter-with.png" alt="">
+                  <p>Доочистка грунтом <br> <b>Требуется</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-water.png" alt="">
+                  <p>Уровень грунтовых вод <br> <b>Любой</b></p>
+                </li>
+              </ul>
+              <div class="prod-btn-wrap">
+                <a href="#" class="products__items-wrap--btn-buy">Заказать</a>
+                <a href="#" class="products__items-wrap--btn-cost">Все цены</a>
+              </div>
+            </div>
+          </div>
+          <div class="products__items-wrap">
+            <div class="products__items-wrap">
+              <img src="img/prod3.png" alt="">
+              <h3>Евролос Про 3</h3>
+              <div class="price">
+                <span class="old-price">160 300₽</span>
+                <span class="new-price">135 270₽</span>
+              </div>
+              <p class="prod-decr">Аэрационная установка глубокой биологической очистки сточных вод. Вызов
+                ассенизаторской машины не требуется, откачка активного ила 1 раз в 2 года.</p>
+              <ul class="prod-list">
+                <li class="prod-list__item">
+                  <img src="img/prod-count.png" alt="">
+                  <p>Кол-во пользователей <br> <b>От 3 до 250 человек</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-living.png" alt="">
+                  <p>Проживание <br> <b>Сезонное/Постоянное</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-filter.png" alt="">
+                  <p>Степень очистки <br> <b>до 75%</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-filter-with.png" alt="">
+                  <p>Доочистка грунтом <br> <b>Требуется</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-water.png" alt="">
+                  <p>Уровень грунтовых вод <br> <b>Любой</b></p>
+                </li>
+              </ul>
+              <div class="prod-btn-wrap">
+                <a href="#" class="products__items-wrap--btn-buy">Заказать</a>
+                <a href="#" class="products__items-wrap--btn-cost">Все цены</a>
+              </div>
+            </div>
+          </div>
+          <div class="products__items-wrap">
+            <div class="products__items-wrap">
+              <img src="img/prod4.png" alt="">
+              <h3>Евролос Грунт 3</h3>
+              <div class="price">
+                <span class="old-price">160 300₽</span>
+                <span class="new-price">135 270₽</span>
+              </div>
+              <p class="prod-decr">Станция для работы в условиях высоких грунтовых вод. Не требует вызова
+                ассенизаторской машины, откачка активного ила 1 раз в 2 года.</p>
+              <ul class="prod-list">
+                <li class="prod-list__item">
+                  <img src="img/prod-count.png" alt="">
+                  <p>Кол-во пользователей <br> <b>От 3 до 250 человек</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-living.png" alt="">
+                  <p>Проживание <br> <b>Сезонное/Постоянное</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-filter.png" alt="">
+                  <p>Степень очистки <br> <b>до 75%</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-filter-with.png" alt="">
+                  <p>Доочистка грунтом <br> <b>Требуется</b></p>
+                </li>
+                <li class="prod-list__item">
+                  <img src="img/prod-water.png" alt="">
+                  <p>Уровень грунтовых вод <br> <b>Любой</b></p>
+                </li>
+              </ul>
+              <div class="prod-btn-wrap">
+                <a href="#" class="products__items-wrap--btn-buy">Заказать</a>
+                <a href="#" class="products__items-wrap--btn-cost">Все цены</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="get-station block" id="getStationLink">
+    <div class="container">
+      <div class="station-wrap">
+        <h2 class="station-wrap__title">Как получить станцию?</h2>
+        <div class="station-wrap__list">
+          <div class="station-wrap__list-item">
+            <div class="station-wrap__list-item--img-wrap">
+              <img src="img/stat1.png" alt="">
+            </div>
+            <h3>Заявка</h3>
+            <p>Вы оставляете заявку — получаете консультацию специалиста</p>
+            <div class="station-btn">
+
+            </div>
+          </div>
+          <div class="station-wrap__list-item">
+            <div class="station-wrap__list-item--img-wrap">
+              <img src="img/stat2.png" alt="">
+            </div>
+            <h3>Замер</h3>
+            <p>Бесплатный выезд инженера поможет учесть все нюансы и сократит расходы на установку септика.</p>
+            <div class="station-btn">
+
+            </div>
+          </div>
+          <div class="station-wrap__list-item">
+            <div class="station-wrap__list-item--img-wrap">
+              <img src="img/stat3.png" alt="">
+            </div>
+            <h3>Договор</h3>
+            <p>Мы заключаем с вами договор и приступаем к работе.</p>
+            <div class="station-btn">
+              <a href="#">Оставить заявку</a>
+            </div>
+          </div>
+          <div class="station-wrap__list-item">
+            <div class="station-wrap__list-item--img-wrap">
+              <img src="img/stat4.png" alt="">
+            </div>
+            <h3>Монтаж</h3>
+            <p>В назначенный день вам бесплатно доставят станцию, проведут монтаж и запуск</p>
+            <div class="station-btn">
+
+            </div>
+          </div>
+          <div class="station-wrap__list-item">
+            <div class="station-wrap__list-item--img-wrap">
+              <img src="img/stat5.png" alt="">
+            </div>
+            <h3>Гарантия</h3>
+            <p>Вы получаете официальную гарантию на станцию, монтажные работы и можете без забот наслаждаться удобствами.</p>
+            <div class="station-btn">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="calculator block">
+    <div class="container">
+      <div class="calculator-wrapper">
+
+        <div class="calculator__middle">
+
+          <div class="prev">
+            <a id="prev" onclick="plusSlides(-1)">Назад</a>
+          </div>
+          <div class="next">
+            <a id="next" onclick="plusSlides(1)">Далее</a>
+          </div>
+
+          <div class="calculator__header">
+            <h2 class="calculator__header-title">Калькулятор конечной стоимости</h2>
+            <span class="calculator__header-descr">Помогите нам точно рассчитать стоимость вашей будущей станции</span>
+          </div>
+
+          <div class="calculator__middle-steps">
+            <div class="calculator__middle-steps-item ">
+              <h3>Объём</h3>
+              <span class="calculator__middle-steps-item--step step-active dot" onclick="currentSlide(1)">1</span>
+            </div>
+            <div class="calculator__middle-steps-item ">
+              <h3>Период</h3>
+              <span class="calculator__middle-steps-item--step dot" onclick="currentSlide(2)">2</span>
+            </div>
+            <div class="calculator__middle-steps-item ">
+              <h3>Монтаж</h3>
+              <span class="calculator__middle-steps-item--step dot" onclick="currentSlide(3)">3</span>
+            </div>
+            <div class="calculator__middle-steps-item ">
+              <h3>Место</h3>
+              <span class="calculator__middle-steps-item--step dot" onclick="currentSlide(4)">4</span>
+            </div>
+            <div class="calculator__middle-steps-item ">
+              <h3>Бренд</h3>
+              <span class="calculator__middle-steps-item--step dot" onclick="currentSlide(5)">5</span>
+            </div>
+            <div class="calculator__middle-steps-item ">
+              <h3>Связь</h3>
+              <span class="calculator__middle-steps-item--step dot" onclick="currentSlide(6)">6</span>
+            </div>
+            <div class="calculator__middle-steps-item ">
+              <h3>Смета</h3>
+              <span class="calculator__middle-steps-item--step dot" onclick="currentSlide(7)">7</span>
+            </div>
+          </div>
+
+          <div class="slider">
+
+
+            <div class="slideshow-container">
+
+              <div class="mySlides fade">
+                <div class="calculator__bottom form-range slider-item slider-item-active slide fade">
+                  <h3>Количество пользователей: <span class="calculator__bottom-count" id="rangeValueCalc">10</span></h3>
+                  <input type="range" class="counter-users" value="10" min="1" max="30" onchange="document.getElementById('rangeValueCalc').innerHTML = this.value;" list="rangeListCalc">
+                  <datalist id="rangeListCalc">
+                    <option value="1" label="1">1</option>
+                    <option value="5" label="5">5</option>
+                    <option value="10" label="10">10</option>
+                    <option value="15" label="15">15</option>
+                    <option value="20" label="20">20</option>
+                    <option value="25" label="25">25</option>
+                    <option value="30" label="30">30</option>
+                  </datalist>
+                  <div class="range-list-values">
+                    <span>1</span>
+                    <span>5</span>
+                    <span>10</span>
+                    <span>15</span>
+                    <span>20</span>
+                    <span>25</span>
+                    <span>30</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div>
+                  <h3>Период пользования</h3>
+                  <div class="mySlides__choise">
+                    <a href="#" class="seasonal mySlides__choise-checkbox my-slide-check">Сезонный</a>
+                    <a href="#" class="permanent mySlides__choise-checkbox my-slide-check">Постоянный</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div>
+                  <h3>Кто будет делать монтаж?</h3>
+                  <div class="mySlides__choise">
+                    <a href="#" class="mySlides__choise-checkbox my-slide-check">Самостоятельно</a>
+                    <a href="#" class="mySlides__choise-checkbox my-slide-check">Заказать монтаж</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div class="">
+                  <h3>Адрес установки септика</h3>
+                  <div>
+                    <input type="text" class="installation-adress" placeholder="Например: Ленинградская область, Лаголово, д.4">
+                  </div>
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div>
+                  <h3>Бренд</h3>
+                  <div>
+                    <input type="text" class="estimate-name estimate-input" placeholder="Ваше имя">
+                    <input type="text" class="estimate-phone estimate-input" placeholder="Ваш номер телефона">
+                  </div>
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div>
+                  <h3>Как вам передать смету?</h3>
+                  <div>
+                    <input type="text" class="estimate-name estimate-input" placeholder="Ваше имя">
+                    <input type="text" class="estimate-phone estimate-input" placeholder="Ваш номер телефона">
+                  </div>
+                </div>
+              </div>
+
+              <div class="mySlides fade">
+                <div>
+                  <h3>Благодарим вас за заявку!</h3>
+                  <div>
+                    <span>Ваш персональный менеджер сообщит результат расчёта</span>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <section class="description block">
+    <div class="container">
+      <div class="description-wrapper">
+        <h2 class="description__title">Автономная станция глубокой биологической очистки сточных вод</h2>
+        <div class="description__block-wrapper">
+          <div class="description__block--item">
+            <img src="img/descr1.png" alt="">
+            <h3 class="description__block--item-title">Надежное решение проблемы утилизации стоков</h3>
+            <p class="description__block--item-descr">Евролос дает надежное решение проблемы по утилизации вредных бытовых стоков как на даче, так и в
+              коттеджном поселке. Что, несомненно, выделяет станцию среди множества решений: выгребные ямы, септические
+              системы и другие сооружения.</p>
+          </div>
+          <div class="description__block--item">
+            <img src="img/descr2.png" alt="">
+            <h3 class="description__block--item-title">Простота и легкость
+              монтажа</h3>
+            <p class="description__block--item-descr">Автономная канализация в частном доме построенная на базе станции Евролос отличается малыми габаритными
+              размерами и эргономичной формой конструкции, что позволяет сократить общее время монтажа и произвести
+              запуск станции всего за 1 день!</p>
+          </div>
+          <div class="description__block--item">
+            <img src="img/descr3.png" alt="">
+            <h3 class="description__block--item-title">Отсутствие неприятных
+              запахов</h3>
+            <p class="description__block--item-descr">Станция глубокой биологической очистки сточных вод. Евролос отличается полностью герметичным корпусом, а
+              очистка вод внутри нее ведется при помощи современных методов, которые предотвращают возникновение
+              неприятных запахов.</p>
+          </div>
+          <div class="description__block--item">
+            <img src="img/descr4.png" alt="">
+            <h3 class="description__block--item-title">Редкое техническое
+              обслуживание</h3>
+            <p class="description__block--item-descr">Редкая необходимость в техническом обслуживании станции обусловлена простотой конструкции, а также тем,
+              что автономная система канализации построенная на базе Евролос не нуждается в постоянной откачке вредного
+              содержимого.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us block" id="whyUsLink">
+    <div class="container">
+      <div class="why-us__wrapper">
+        <h2 class="why-us__title">Почему именно Евролос?</h2>
+        <span class="why-us__descr">4 важных преимущества автономной станции глубокой очистки</span>
+        <div class="why-us__block">
+          <div class="why-us__block-item">
+            <figure><img src="img/whyus1.png" alt=""></figure>
+            <h3>Высокое качество очистки бытовых стоков</h3>
+            <p>Уникальная форма пластиковой биозагрузки, применяемая в стации Евролос БИО, обладает увеличенной
+              площадью, благоприятно влияет на скорость размножения и жизнедеятельность колоний активных бактерий.</p>
+          </div>
+          <div class="why-us__block-item">
+            <figure><img src="img/whyus2.png" alt=""></figure>
+            <h3>Энергонезависимость! Не страшны перебои в сети</h3>
+            <p>Даже при отключении электроэнергии на даче или в частном доме, самотечная станция Евролос продолжает свою
+              работу в течении 2-х дней с минимальным снижением эффективности</p>
+          </div>
+          <div class="why-us__block-item">
+            <figure><img src="img/whyus3.png" alt=""></figure>
+            <h3>Прочность конструкции без бетонных работ</h3>
+            <p>Станция глубокой биологической очистки Евролос может с успехом устанавливаться в любых типах грунта, в
+              том числе с высоким уровнем грунтовых вод и даже не требует наличия бетонной подушки. </p>
+          </div>
+        </div>
+        <div class="why-us__block why-us__block--sb">
+          <div class="why-us__block-item">
+            <figure><img src="img/whyus4.png" alt=""></figure>
+            <h3>Надежность и особое внимание к деталям</h3>
+            <p>Наши конструктора отводят большое значение обратной связи от пользователей. В результате чего,
+              накопленный опыт позволил создать станцию адаптированную специально под российские условия.</p>
+          </div>
+          <figure class="why-us__figure-item">
+            <figure><img src="img/why1.png" alt=""></figure>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="comments block" id="commentsLink">
+    <div class="container">
+      <div class="comments__wrapper">
+        <h2 class="comments__title">Отзывы владельцев</h2>
+        <div class="comments__block">
+          <div class="comments__block-item">
+            <figure class="comments__block-item-img">
+
+            </figure>
+            <h3 class="comments__block-item-title">Зимний коттедж и баня</h3>
+            <p class="comments__block-item-descr">Видео отзыв о монтаже и использовании септика Евролос БИО 8, постоянное проживание в коттеджном
+              поселке.</p>
+            <span class="comments__block-item-place">Новорижское ш., Троицкий Парк </span>
+          </div>
+          <div class="comments__block-item">
+            <figure class="comments__block-item-img">
+
+            </figure>
+            <h3 class="comments__block-item-title">Частный дом в Алексино</h3>
+            <p class="comments__block-item-descr">Отзыв о станции Евролос после продолжительного постоянного использования.</p>
+            <span class="comments__block-item-place">Алексино, Истринский р-н</span>
+          </div>
+          <div class="comments__block-item">
+            <figure class="comments__block-item-img">
+
+            </figure>
+            <h3 class="comments__block-item-title">Септик для дачи в Солнечногорске</h3>
+            <p class="comments__block-item-descr">Видео отзыв об установке станции Евролос БИО 8 на даче с сезонным проживанием.</p>
+            <span class="comments__block-item-place">Солнечногорск, Головково</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="consultation block">
+    <div class="container">
+      <div class="consultation__wrapper">
+        <div class="consultation__feedback">
+          <h2 class="consultation__feedback-title">У вас есть вопросы или нужна наша консультация?</h2>
+          <p class="consultation__feedback-descr">Позвоните нам или оставьте заявку, наши менеджеры свяжутся с вами и
+            проконсультируют по всем интересующим вас вопросам.</p>
+          <a href="#" class="consultation__feedback-link">Обратная связь</a>
+        </div>
+        <figure class="consultation__img">
+          <img src="img/consultation.png" alt="">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="map block">
+    <div id="wrapMap">
+      <iframe
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A3f7d809624f897b091a05fef8895e9fa8aa3731e0ef2d2c3f536c8dd5b05eca3&amp;source=constructor"
+        width="100%" height="500" frameborder="0"></iframe>
+    </div>
+  </section>
+
+  <footer class="footer block">
+    <div class="container footer__wrapper">
+      <h4>&copy;2019 www.site.ru</h4>
+    </div>
+
+
+  </footer>
+
+
+</div>
+
+
+<script src="js/vendor/modernizr-3.7.1.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+<script src="https://unpkg.com/imask"></script>
+<!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+<script>
+  window.ga = function () {
+    ga.q.push(arguments)
+  };
+  ga.q = [];
+  ga.l = +new Date;
+  ga('create', 'UA-XXXXX-Y', 'auto');
+  ga('set', 'transport', 'beacon');
+  ga('send', 'pageview')
+</script>
+
+<!--SLIDER-->
+<script>
+  var slideIndex = 1;
+  showSlides(slideIndex);
+
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var btnPrev = document.querySelector('#prev');
+    var dots = document.getElementsByClassName("dot");
+    if (n > slides.length) {slideIndex = 1; }
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+
+    if (slideIndex === 1){
+      btnPrev.style.visibility = 'none';
+    }
+  }
+</script>
+
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
